@@ -13,10 +13,10 @@ const MovieScreen = ({ addMovie, movieList, page, setPage, list, removeMovie}) =
     return (
         <div className="page">
             <h1>Noah's Movie Theatre</h1>
-            <h3>Add a movie to your watchlist!</h3>
+            <h3 id="instr" >Add a movie to your watchlist!</h3>
             <div className="btn-container">
-                <button onClick={page !== 1 && decrement}>Previous</button>
-                <button onClick={increment}>Next</button>
+                <button onClick={page !== 1 && decrement}> Previous Page </button>
+                <button onClick={increment}> Next Page </button>
             </div>
             <div className="movie-container">{movieDisplay}</div>
         </div>
